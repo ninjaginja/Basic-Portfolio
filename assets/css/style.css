@@ -8,7 +8,7 @@ body {
 	border-bottom: 2px solid #cccccc;
 }
 
-.heading {
+header {
 	width: 960px;
 	background-color: white;
 	position: relative;
@@ -216,6 +216,11 @@ h4 {
   right: 0;
   left: 0;
   margin: 0 2.5% 0 2.5%;
+}
+
+.overlay-link {
+  display: block;
+  color: #ffffff;
 }
 
 footer {
