@@ -49,9 +49,11 @@ section {
 
 .main {
 	width: 608px;
+  height: auto;
 	float: left;
 	padding: 0px 20px 20px 20px;
 	border: 1px solid #dddddd;
+  margin-bottom: 20px;
 }
 
 .sidebar {
@@ -97,12 +99,13 @@ p {
 	color: #777777;
 	margin-top: 0;
 	padding-bottom: 24px;
-	letter-spacing: 0.5px;
+	letter-spacing: 0.2px;
 }
 
-#bio {
+.main-content {
 	padding-top: 30px;
 	border-top: 3px solid #dddddd;
+  margin-bottom: 20px;
 }
 
 #bio-image {
@@ -127,21 +130,6 @@ a:hover {
 	opacity: 0.7;
 }
 
-footer {
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	background-color: #666666;
-	color: white;
-	text-align: center;
-	border-top: 5px solid #4aaaa5;
-	padding: 40px;
-	font-size: 12px;
-	margin-top: 30px;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-}
-
 .clearfix::after {
 	content: "";
 	display: block;
@@ -152,8 +140,7 @@ form {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	color: #777777;
 	font-size: 18px;
-	border-top: 3px solid #dddddd;
-	padding: 20px 0px 5px 0px;
+	padding-bottom: 5px;
 }
 
 .form-fields {
@@ -173,7 +160,7 @@ textarea {
 textarea:focus {
 	outline:none;
     border: 1px solid #4aaaa5;
-    box-shadow: 0px 0px 5px #4aaaa5;	
+    box-shadow: 0px 0px 5px #4aaaa5;
 }
 
 input {
@@ -182,10 +169,14 @@ input {
 	margin: 5px 0px 10px 0px;
 }
 
-input:focus { 
+input:focus {
     outline:none;
     border: 1px solid #4aaaa5;
-    box-shadow: 0px 0px 5px #4aaaa5;  
+    box-shadow: 0px 0px 5px #4aaaa5;
+}
+
+input::placeholder {
+  color: #cccccc;
 }
 
 #submit {
@@ -195,4 +186,49 @@ input:focus {
 	border: none;
 	padding: 10px 20px 10px 20px;
 	margin-bottom: 0px;
+}
+
+.portfolio {
+  width: 100%;
+}
+
+td {
+  width: 50%;
+  vertical-align: top;
+  position: relative;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.thumbnail {
+  width: 95%;
+}
+
+h4 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  left: 0;
+  margin: 0 2.5% 0 2.5%;
+}
+
+footer {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	background-color: #666666;
+	color: white;
+	text-align: center;
+	border-top: 5px solid #4aaaa5;
+	padding: 40px;
+	font-size: 12px;
+	margin-top: 30px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
 }
